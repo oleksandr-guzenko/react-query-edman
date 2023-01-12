@@ -1,12 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import classnames from 'classnames';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Nutrients from "./nutrients/Nutrients";
 import Search from "./search/Search";
 import Filter from "./filter/Filter";
+import Results from "./results/Results";
 
 function Recipe() {
     const [tab, setTab] = useState('search');
+    const [showResults, setShowResults] = useState(false);
+    const results = useSelector(state => state.filters.results);
+
+    useEffect(() => {
+        if(results.hits) setShowResults(true);
+    }, [results]);
+
+    useEffect(() => {
+        setShowResults(false);
+    }, [tab])
 
     return (
         <div>
@@ -30,8 +42,9 @@ function Recipe() {
                             </div>
                         </div>
                         <div className="col-md-6 border-start border-end middle-form">
-                            { tab === 'search' && <Search /> }
-                            { tab === 'nutrients' && <Nutrients /> }
+                            { (tab === 'search' && !showResults) && <Search /> }
+                            { (tab === 'nutrients' && !showResults) && <Nutrients /> }
+                            { showResults && <Results />}
                         </div>
                         <div className="col-md-3 bg-light py-3">
                             <Filter />

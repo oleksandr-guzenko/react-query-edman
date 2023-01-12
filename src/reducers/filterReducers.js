@@ -1,18 +1,42 @@
 import { 
     ADD_FILTER,
-    DELETE_FILTER
+    DELETE_FILTER,
+    SET_SEARCH,
+    GET_RESULTS
  } from "../actions/types";
 
-const initialState = []
+const initialState = {
+    filters: [],
+    search: '',
+    errors: {},
+    results: {}
+}
 
-export default (state = initialState, { type, payload }) => {
-    switch (type) {
-
+export default (state = initialState, action) => {
+    switch (action.type) {
     case ADD_FILTER:
-        return [ payload, ...state ]
+        return { 
+            ...state, 
+            filters: [ ...action.payload ] 
+        };
+
     case DELETE_FILTER:
-        state.splice(payload, 1);
-        return [...state];
+        return { 
+            ...state, 
+            filters: [ ...action.payload ]
+        };
+    
+    case SET_SEARCH:
+        return {
+            ...state,
+            search: action.payload
+        }
+
+    case GET_RESULTS:
+        return {
+            ...state,
+            results: { ...action.payload }
+        }
 
     default:
         return state
