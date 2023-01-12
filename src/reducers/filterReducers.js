@@ -2,14 +2,16 @@ import {
     ADD_FILTER,
     DELETE_FILTER,
     SET_SEARCH,
-    GET_RESULTS
+    GET_RESULTS,
+    DO_SEARCH
  } from "../actions/types";
 
 const initialState = {
     filters: [],
     search: '',
     errors: {},
-    results: {}
+    results: {},
+    loading: false
 }
 
 export default (state = initialState, action) => {
@@ -35,9 +37,19 @@ export default (state = initialState, action) => {
     case GET_RESULTS:
         return {
             ...state,
-            results: { ...action.payload }
+            results: { ...action.payload },
+            loading: false
         }
-
+    
+    case DO_SEARCH:
+        return {
+            ...state,
+            loading: true,
+            results: {
+                hits: []
+            }
+        }
+    
     default:
         return state
     }

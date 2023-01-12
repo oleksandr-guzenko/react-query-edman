@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 import store from '../store';
 
@@ -6,7 +7,8 @@ import {
     ADD_FILTER,
     DELETE_FILTER,
     SET_SEARCH,
-    GET_RESULTS
+    GET_RESULTS,
+    DO_SEARCH
 } from './types';
 
 export const addFilter = (filter) => ({
@@ -26,7 +28,23 @@ export const setSearch = (qstring) => ({
 
 export const doSearch = () => {
   const query = store.getState().filters;
+
+  if(query.search === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Errors',
+      text: 'You need to type keywords for searching'
+    });
+
+    return;
+  }
+
   const params = {};
+
+  store.dispatch({
+    type: DO_SEARCH,
+    payload: null
+  });
 
   params.q = query.search;
   params['app_id'] = process.env.REACT_APP_API_ID;

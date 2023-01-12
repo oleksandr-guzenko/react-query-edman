@@ -11,15 +11,18 @@ function Recipe() {
     const [tab, setTab] = useState('search');
     const [showResults, setShowResults] = useState(false);
     const results = useSelector(state => state.filters.results);
+    const resultsLoading = useSelector(state => state.filters.loading);
 
     useEffect(() => {
         if(results.hits) setShowResults(true);
     }, [results]);
 
-    useEffect(() => {
+    const changeTab = (str) => {
+        setTab(str);
         setShowResults(false);
-    }, [tab])
+    }
 
+    console.log(resultsLoading);
     return (
         <div>
             <div className="px-4 py-5 text-center bgr-home recipe-api-demo">
@@ -29,22 +32,22 @@ function Recipe() {
                 </div>
             </div>
 
-            <div className="container col-xl-10 py-5">
+            <div className="container py-5">
                 <div className="rounded-3 shadow">
                     <div className="row">
                         <div className="col-md-3 px-4 py-4">
                             <div className="small text-muted">Choose one or more methods</div>
                             <div>
-                                <div className={classnames("px-0 py-3 mt-2 h5 fw-normal tab", {"border-bottom border-success text-success" : tab === 'search'})} onClick={e => setTab('search')}>Searching by keyword</div>
+                                <div className={classnames("px-0 py-3 mt-2 h5 fw-normal tab", {"border-bottom border-success text-success" : tab === 'search'})} onClick={e => changeTab('search')}>Searching by keyword</div>
                             </div>
                             <div>
-                                <div className={classnames("px-0 py-3 h5 fw-normal tab", {"border-bottom border-success text-success" : tab === 'nutrients'})} onClick={e => setTab('nutrients')}>Nutrients</div>
+                                <div className={classnames("px-0 py-3 h5 fw-normal tab", {"border-bottom border-success text-success" : tab === 'nutrients'})} onClick={e => changeTab('nutrients')}>Nutrients</div>
                             </div>
                         </div>
                         <div className="col-md-6 border-start border-end middle-form">
-                            { (tab === 'search' && !showResults) && <Search /> }
-                            { (tab === 'nutrients' && !showResults) && <Nutrients /> }
-                            { showResults && <Results />}
+                            { (tab === 'search' && !showResults && !resultsLoading) && <Search /> }
+                            { (tab === 'nutrients' && !showResults && !resultsLoading) && <Nutrients /> }
+                            { (showResults || resultsLoading) && <Results />}
                         </div>
                         <div className="col-md-3 bg-light py-3">
                             <Filter />

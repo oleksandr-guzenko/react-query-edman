@@ -11,7 +11,7 @@ function ResultItem({item}) {
                 </div>
                 <div className="col-lg-8">
                     <div className="h6 fw-bolder">{item.label}</div>
-                    <div>
+                    <div className="text-muted">
                         {item.dietLabels.join(' • ').replaceAll('-', ' ')} • {item.healthLabels.join(' • ').replaceAll('-', ' ')}
                     </div>
                 </div>
