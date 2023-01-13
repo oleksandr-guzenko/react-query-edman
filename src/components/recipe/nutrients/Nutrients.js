@@ -2,6 +2,8 @@ import React from 'react'
 
 import NutrientItem from "./NutrientItem";
 
+// description - Component to display all nutrients
+
 function Nutrients() {
   const macronutrients = [
     'Fat',

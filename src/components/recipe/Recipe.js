@@ -7,22 +7,28 @@ import Search from "./search/Search";
 import Filter from "./filter/Filter";
 import Results from "./results/Results";
 
+// description - Component to display the recipe form
+
 function Recipe() {
     const [tab, setTab] = useState('search');
     const [showResults, setShowResults] = useState(false);
     const results = useSelector(state => state.filters.results);
     const resultsLoading = useSelector(state => state.filters.loading);
 
+    // render results from Edman API
+
     useEffect(() => {
         if(results.hits) setShowResults(true);
     }, [results]);
+
+    // description - Switch the tab
+    // params - str: tab name (e.g. Search By Keyword | Nutrients)
 
     const changeTab = (str) => {
         setTab(str);
         setShowResults(false);
     }
 
-    console.log(resultsLoading);
     return (
         <div>
             <div className="px-4 py-5 text-center bgr-home recipe-api-demo">

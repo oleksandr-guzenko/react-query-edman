@@ -7,11 +7,10 @@ import {
  } from "../actions/types";
 
 const initialState = {
-    filters: [],
-    search: '',
-    errors: {},
-    results: {},
-    loading: false
+    filters: [], // all selected nutrients filters 
+    search: '', // keyword for search
+    results: {}, // results from Edman API
+    loading: false // loading state while waiting responses from Edman API
 }
 
 export default (state = initialState, action) => {

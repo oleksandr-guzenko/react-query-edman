@@ -1,5 +1,7 @@
 import React from 'react'
 
+// Component to display a searching result item
+
 function ResultItem({item}) {
     const digests = item.digest;
 

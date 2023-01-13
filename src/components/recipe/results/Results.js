@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 
 import ResultItem from "./ResultItem";
 
+// description - Component to display the searched results
+
 function Results() {
     const results = useSelector(state => state.filters.results.hits);
     const resultsLoading = useSelector(state => state.filters.loading);

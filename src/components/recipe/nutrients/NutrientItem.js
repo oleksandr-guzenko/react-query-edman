@@ -4,6 +4,9 @@ import {
     addFilter
 } from "../../../actions/filterActions";
 
+// description - Component to display a nutrient
+// params - type: a nutrient type (e.g. FAT)
+
 function NutrientItem({type}) {
     const [min, setMin] = useState(0);
     const [max, setMax] = useState(100);
@@ -11,6 +14,8 @@ function NutrientItem({type}) {
     const dispatch = useDispatch();
     const selected = filters.findIndex(value => value.type === type) !== -1;
 
+    // description - add a nutrient filter
+     
     const select = () => {
         if(!selected) {
             const filter = {

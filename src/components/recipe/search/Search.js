@@ -4,9 +4,13 @@ import validator from "validator";
 
 import { setSearch, doSearch } from "../../../actions/filterActions";
 
+// description - Component to search by the keyword
+
 function Search() {
   const [qstring, setQstring] = useState('');
   const dispatch = useDispatch();
+
+  // description - type keyword for search
 
   const onSearch = () => {
     if(qstring !== '') {
