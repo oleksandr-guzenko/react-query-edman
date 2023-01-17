@@ -4,16 +4,20 @@ import { useSelector, useDispatch } from "react-redux";
 import FilterItem from "./FilterItem";
 import { setSearch, doSearch } from "../../../actions/filterActions";
 
-//  description - Component to display all selected nutrient filters
-
+/** 
+ * Display all selected nutrient filters
+ * @component
+ */
 function Filter() {
     const dispatch = useDispatch();
     const { filters, search } = useSelector(state => state.filters);
 
     const filterItems = filters.map((value, index) => <FilterItem key={`filter-${index}`} index = {index} item={value} />);
 
-    // description - delete the keyword for search
-
+    /** 
+     * Delete the keyword for search
+     * @function
+     */
     const deleteSearch = () => {
         dispatch(setSearch(''));
     }

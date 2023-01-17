@@ -11,37 +11,44 @@ import {
     DO_SEARCH
 } from './types';
 
-// description - add a nutrient filter from nutrients
-// params - all nutrient filters selected
-
+/** 
+ * Add a nutrient filter from nutrients
+ * @function
+ * @param {Object[]} filters - array of all nutrient filters selected
+ */
 export const addFilter = (filters) => ({
   type: ADD_FILTER,
   payload: filters
 });
 
-// description - remove a nutrient filter from selected filter list
-// params - index of a nutrient filter to be removed
-
+/** 
+ * Remove a nutrient filter from selected filter list
+ * @function
+ * @param {number} index - index of a nutrient filter to be removed
+ */
 export const deleteFilter = (index) => ({
     type: DELETE_FILTER,
     payload: index
 });
 
-
-// description - set the keyword for search
-// params - keyword for search
-
+/** 
+ * Set the keyword for search
+ * @function
+ * @param {string} qstring - keyword for search
+ */
 export const setSearch = (qstring) => ({
   type: SET_SEARCH,
   payload: qstring
 })
 
-// description - search data from Edman API with selected nutrient filters and keyword
-
+/** 
+ * Search data from Edam API with selected nutrient filters and keyword
+ * @function
+ */
 export const doSearch = () => {
   const query = store.getState().filters;
 
-  // display error alert when no keyword for search
+  // Display error alert when no keyword for search
   
   if(query.search === '') {
     Swal.fire({
@@ -60,23 +67,24 @@ export const doSearch = () => {
     payload: null
   });
 
-  // set the query for Edman API
+  // Set the query for Edman API
 
   params.q = query.search;
+  params.type = 'any';
   params['app_id'] = process.env.REACT_APP_API_ID;
   params['app_key'] = process.env.REACT_APP_API_KEY;
 
-  // set the nutrients query for Edman API
+  // Set the nutrients query for Edman API
 
   for(let i = 0; i < query.filters.length; i ++) {
     const filter = query.filters[i];
-    params[`nutrients%5B${filter.type.toUpperCase()}%5D`] = `${filter.min}-${filter.max}`;
+    params[`nutrients%5B${filter.tag}%5D`] = `${filter.min}-${filter.max}`;
   }
 
-  // request and get responses from Edman API
+  // Request and fetch data from Edman API
 
   axios
-    .get('https://api.edamam.com/search', {
+    .get('https://api.edamam.com/api/recipes/v2', {
       params: params
     })
     .then(res => {

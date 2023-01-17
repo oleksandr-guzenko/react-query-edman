@@ -39,25 +39,29 @@ function Recipe() {
             </div>
 
             <div className="container py-5">
-                <div className="rounded-3 shadow">
-                    <div className="row">
-                        <div className="col-md-3 px-4 py-4">
+                <div className="row border rounded-3 shadow">
+                    <div className="col-md-3 px-4 py-4 bg-light">
+                        <div>
                             <div className="small text-muted">Choose one or more methods</div>
                             <div>
-                                <div className={classnames("px-0 py-3 mt-2 h5 fw-normal tab", {"border-bottom border-success text-success" : tab === 'search'})} onClick={e => changeTab('search')}>Searching by keyword</div>
+                                <div className={classnames("px-0 py-3 mt-2 h5 fw-normal tab", {"text-success" : tab === 'search'})} onClick={e => changeTab('search')}>Searching by keyword</div>
                             </div>
                             <div>
-                                <div className={classnames("px-0 py-3 h5 fw-normal tab", {"border-bottom border-success text-success" : tab === 'nutrients'})} onClick={e => changeTab('nutrients')}>Nutrients</div>
+                                <div className={classnames("px-0 py-3 h5 fw-normal tab", {"text-success" : tab === 'nutrients'})} onClick={e => changeTab('nutrients')}>Nutrients</div>
                             </div>
                         </div>
-                        <div className="col-md-6 border-start border-end middle-form">
-                            { (tab === 'search' && !showResults && !resultsLoading) && <Search /> }
-                            { (tab === 'nutrients' && !showResults && !resultsLoading) && <Nutrients /> }
-                            { (showResults || resultsLoading) && <Results />}
-                        </div>
-                        <div className="col-md-3 bg-light py-3">
-                            <Filter />
-                        </div>
+                    </div>
+                    <div className="col-md-6 border-md-start border-md-end middle-form py-3">
+                        { (tab === 'search' && !showResults && !resultsLoading) && <Search /> }
+                        { (tab === 'nutrients' && !showResults && !resultsLoading) && <Nutrients /> }
+                        { (showResults || resultsLoading) && (
+                            <div style={{maxHeight: '800px', overflowY: 'scroll'}} className="custom-scroll">
+                                <Results />
+                            </div>
+                        )}
+                    </div>
+                    <div className="col-md-3 bg-light py-3">
+                        <Filter />
                     </div>
                 </div>
             </div>

@@ -1,27 +1,35 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
+
 import {
     addFilter
 } from "../../../actions/filterActions";
 
-// description - Component to display a nutrient
-// params - type: a nutrient type (e.g. FAT)
-
-function NutrientItem({type}) {
+/**
+ * Displays a nutrient 
+ * @component
+ * @param {string} item - nutrient information
+ */
+function NutrientItem({item}) {
+    const {type, unit, tag} = item;
     const [min, setMin] = useState(0);
     const [max, setMax] = useState(100);
     const filters = useSelector(state => state.filters.filters);
     const dispatch = useDispatch();
     const selected = filters.findIndex(value => value.type === type) !== -1;
 
-    // description - add a nutrient filter
-     
+    /** 
+     * Adds a nutrient filter
+     * @function
+     */
     const select = () => {
         if(!selected) {
             const filter = {
                 type: type,
                 min: min,
-                max: max
+                max: max,
+                unit: unit,
+                tag: tag
             }
             
             filters.unshift(filter);
@@ -45,6 +53,7 @@ function NutrientItem({type}) {
                 <div className="fw-bolder text-muted">max</div>
                 <input type="number" className="form-control my-2" value={max} onChange={e => setMax(e.target.value)} />
                 <div className="clearfix">
+                    <div className="float-start">{unit}</div>
                     <div className="float-end">
                     <button className="btn btn-outline-secondary rounded-circle btn-sm" onClick={e => select()}><span className="fa fa-plus"></span></button>
                     </div>
