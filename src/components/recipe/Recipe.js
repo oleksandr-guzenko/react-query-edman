@@ -5,9 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Nutrients from "./nutrients/Nutrients";
 import Search from "./search/Search";
 import Filter from "./filter/Filter";
-import Results from "./results/Results";
-
-// description - Component to display the recipe form
+import Recipes from "./results/Recipes";
 
 function Recipe() {
     const [tab, setTab] = useState('search');
@@ -15,14 +13,9 @@ function Recipe() {
     const results = useSelector(state => state.filters.results);
     const resultsLoading = useSelector(state => state.filters.loading);
 
-    // render results from Edman API
-
     useEffect(() => {
         if(results.hits) setShowResults(true);
     }, [results]);
-
-    // description - Switch the tab
-    // params - str: tab name (e.g. Search By Keyword | Nutrients)
 
     const changeTab = (str) => {
         setTab(str);
@@ -54,11 +47,7 @@ function Recipe() {
                     <div className="col-md-6 border-md-start border-md-end middle-form py-3">
                         { (tab === 'search' && !showResults && !resultsLoading) && <Search /> }
                         { (tab === 'nutrients' && !showResults && !resultsLoading) && <Nutrients /> }
-                        { (showResults || resultsLoading) && (
-                            <div style={{maxHeight: '800px', overflowY: 'scroll'}} className="custom-scroll">
-                                <Results />
-                            </div>
-                        )}
+                        { (showResults || resultsLoading) && <Recipes />}
                     </div>
                     <div className="col-md-3 bg-light py-3">
                         <Filter />

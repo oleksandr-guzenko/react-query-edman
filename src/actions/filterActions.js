@@ -8,7 +8,8 @@ import {
     DELETE_FILTER,
     SET_SEARCH,
     GET_RESULTS,
-    DO_SEARCH
+    DO_SEARCH,
+    LOAD_MORE
 } from './types';
 
 /** 
@@ -60,7 +61,7 @@ export const doSearch = () => {
     return;
   }
 
-  const params = {};
+  const params = []; // query params for API
 
   store.dispatch({
     type: DO_SEARCH,
@@ -69,29 +70,45 @@ export const doSearch = () => {
 
   // Set the query for Edman API
 
-  params.q = query.search;
-  params.type = 'any';
-  params['app_id'] = process.env.REACT_APP_API_ID;
-  params['app_key'] = process.env.REACT_APP_API_KEY;
+  params.push(`q=${query.search}`);
+  params.push(`type=any`);
+  params.push(`app_id=${process.env.REACT_APP_API_ID}`);
+  params.push(`app_key=${process.env.REACT_APP_API_KEY}`);
 
   // Set the nutrients query for Edman API
 
   for(let i = 0; i < query.filters.length; i ++) {
     const filter = query.filters[i];
-    params[`nutrients%5B${filter.tag}%5D`] = `${filter.min}-${filter.max}`;
+    params.push(`nutrients%5B${filter.tag}%5D=${filter.min}-${filter.max}`);
   }
 
   // Request and fetch data from Edman API
 
   axios
-    .get('https://api.edamam.com/api/recipes/v2', {
-      params: params
-    })
+    .get(`https://api.edamam.com/api/recipes/v2?${params.join('&')}`)
     .then(res => {
       store.dispatch({
         type: GET_RESULTS,
         payload: res.data
       });
+    })
+    .catch(err => console.log(err));
+}
+
+/** 
+ * Load more recipes from API
+ * @function
+ */
+export const loadMore = () => {
+  const url = store.getState().filters.results._links.next.href;
+
+  axios
+    .get(url)
+    .then(res => {
+      store.dispatch({
+        type: LOAD_MORE,
+        payload: res.data
+      })
     })
     .catch(err => console.log(err));
 }

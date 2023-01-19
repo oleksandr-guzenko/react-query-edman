@@ -8,7 +8,7 @@ import DigestItem from "./DigestItem";
  * @component
  * @param {string} item - a result item information
  */
-function ResultItem({item}) {
+function RecipeItem({item}) {
     const digests = item.digest;
     const digestItems = digests.map((value, index) => 
         <DigestItem item={value} key={uuidv4()} />
@@ -25,10 +25,10 @@ function ResultItem({item}) {
                         <div className="h5 mb-2">{item.label}</div>
                         <div className="">
                             {item.dietLabels.map(value => (
-                                <div className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1">{value.replaceAll('-', ' ')}</div>
+                                <div className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1" key={uuidv4()}>{value.replaceAll('-', ' ')}</div>
                             ))}
                             {item.healthLabels.map(value => (
-                                <div className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1">{value.replaceAll('-', ' ')}</div>
+                                <div className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1" key={uuidv4()}>{value.replaceAll('-', ' ')}</div>
                             ))}
                         </div>
                     </div>
@@ -52,4 +52,4 @@ function ResultItem({item}) {
     )
 }
 
-export default ResultItem
+export default RecipeItem

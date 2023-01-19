@@ -7,7 +7,7 @@ function Header() {
                 <div className="container-fluid d-flex flex-wrap align-items-center justify-content-center py-2 justify-content-md-between border-bottom">
                     <div className="navbar-header col-md-3 col-6">
                         <div className="navbar-brand">
-                            <a href="https://www.edamam.com/"><img src="assets/img/logo/small-logo.png" className="pe-2" /><img src="assets/img/logo/logo.png" className="logo" /></a>
+                            <a href="/"><img src="logo.png" className="pe-2" alt="logo" style={{height: '50px'}} /></a>
                         </div>
                     </div>
                     <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-lg-flex">

@@ -10,13 +10,17 @@ function Nutrients() {
   const macronutrients = [
     { type: 'Fat', unit: 'g', tag: 'FAT'},
     { type: 'Saturated', unit: 'g', tag: 'FASAT'},
-    { type: 'Trans', unit: 'g', tag: 'TATRN'},
+    { type: 'Trans', unit: 'g', tag: 'FATRN'},
     { type: 'Monounsaturated', unit: 'g', tag: 'FAMS'},
     { type: 'Polyunsaturated', unit: 'g', tag: 'FAPU'},
     { type: 'Carbs', unit: 'g', tag: 'CHOCDF'},
     { type: 'Fiber', unit: 'g', tag: 'FIBTG'},
     { type: 'Sugars', unit: 'g', tag: 'SUGAR'},
-    { type: 'Protein', unit: 'g', tag: 'PROCNT'}
+    { type: 'Protein', unit: 'g', tag: 'PROCNT'},
+    { type: 'Carbs (net)', unit: 'g', tag: 'CHOCDF.net'},
+    { type: 'Sugars, added', unit: 'g', tag: 'SUGAR.added'},
+    { type: 'Sugar alcohols', unit: 'g', tag: 'SUGAR.alcohol'},
+    { type: 'Water', unit: 'g', tag: 'WATER'}
   ];
 
   const micronutrients = [
@@ -26,6 +30,7 @@ function Nutrients() {
     { type: 'Magnesium', unit: 'mg', tag: 'MG'},
     { type: 'Potassium', unit: 'mg', tag: 'K'},
     { type: 'Iron', unit: 'mg', tag: 'FE'},
+    { type: 'Zinc', unit: 'mg', tag: 'ZN' },
     { type: 'Phosphorus', unit: 'mg', tag: 'P'},
     { type: 'Vitamin A', unit: 'μg', tag: 'VITA_RAE'},
     { type: 'Vitamin C', unit: 'mg', tag: 'VITC'},
@@ -34,6 +39,8 @@ function Nutrients() {
     { type: 'Niacin (B3)', unit: 'mg', tag: 'NIA'},
     { type: 'Vitamin (B6)', unit: 'mg', tag: 'VITB6A'},
     { type: 'Folate (Equivalent)', unit: 'μg', tag: 'FOLDFE'},
+    { type: 'Folate (food)', unit: 'μg', tag: 'FOLFD' },
+    { type: 'Folic acid', unit: 'μg', tag: 'FOLAC' },
     { type: 'Vitamin B12', unit: 'μg', tag: 'VITB12'},
     { type: 'Vitamin D', unit: 'μg', tag: 'VITD'},
     { type: 'Vitamin E', unit: 'mg', tag: 'TOCPHA'},

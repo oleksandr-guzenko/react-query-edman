@@ -3,14 +3,16 @@ import {
     DELETE_FILTER,
     SET_SEARCH,
     GET_RESULTS,
-    DO_SEARCH
+    DO_SEARCH,
+    LOAD_MORE
  } from "../actions/types";
 
 const initialState = {
     filters: [], // all selected nutrients filters 
     search: '', // keyword for search
     results: {}, // results from Edman API
-    loading: false // loading state while waiting responses from Edman API
+    loading: false, // loading state while waiting responses from Edman API
+    recipes: [] // recipes from Edman API response
 }
 
 export default (state = initialState, action) => {
@@ -37,6 +39,7 @@ export default (state = initialState, action) => {
         return {
             ...state,
             results: { ...action.payload },
+            recipes: [ ...action.payload.hits ],
             loading: false
         }
     
@@ -44,11 +47,17 @@ export default (state = initialState, action) => {
         return {
             ...state,
             loading: true,
-            results: {
-                hits: []
-            }
+            results: {},
+            recipes: []
         }
     
+    case LOAD_MORE: 
+        return {
+            ...state,
+            results: { ...action.payload },
+            recipes: [ ...state.recipes, ...action.payload.hits ]
+        }
+
     default:
         return state
     }

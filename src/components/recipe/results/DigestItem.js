@@ -11,8 +11,8 @@ import nutrientsInfo from '../nutrients.json';
  */
 function DigestItem({item}) {
     const filters = useSelector(state => state.filters.filters);
-    const index = filters.findIndex(value => value.tag == item.tag);
-    const subDigestItems = item.sub? item.sub.map(value => <DigestItem item={value} index={uuidv4()} />) : [];
+    const index = filters.findIndex(value => value.tag === item.tag);
+    const subDigestItems = item.sub? item.sub.map(value => <DigestItem item={value} key={uuidv4()} />) : [];
 
     return (
         <>

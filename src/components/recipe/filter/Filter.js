@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from "react-redux";
+import { v4 as uuidv4 } from 'uuid';
 
 import FilterItem from "./FilterItem";
 import { setSearch, doSearch } from "../../../actions/filterActions";
@@ -12,7 +13,7 @@ function Filter() {
     const dispatch = useDispatch();
     const { filters, search } = useSelector(state => state.filters);
 
-    const filterItems = filters.map((value, index) => <FilterItem key={`filter-${index}`} index = {index} item={value} />);
+    const filterItems = filters.map((value, index) => <FilterItem key={uuidv4()} index = {index} item={value} />);
 
     /** 
      * Delete the keyword for search

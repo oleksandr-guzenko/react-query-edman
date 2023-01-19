@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
+import classnames from 'classnames';
 
 import {
     addFilter
@@ -39,9 +40,8 @@ function NutrientItem({item}) {
 
     return (
         <div className="col-xxl-4 col-lg-6 dropdown pb-3">
-            <button className="rounded-pill btn btn-outline-secondary" data-bs-toggle="dropdown">
-            { !selected && <span className="fa fa-plus-circle"></span> }
-            { selected && <span className="fa fa-check-circle text-success"></span> }
+            <button className={classnames('btn rounded-pill', {'btn-outline-secondary': !selected, 'btn-secondary': selected})} data-bs-toggle="dropdown">
+            <span className={classnames('fa', {'fa-plus-circle': !selected, 'fa-check-circle': selected})}></span>
             <span className="small"> {type}</span>
             </button>
             <div className="dropdown-menu p-2">
