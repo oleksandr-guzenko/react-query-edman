@@ -23,15 +23,9 @@ function Recipe() {
     }
 
     return (
-        <div>
-            <div className="px-4 py-5 text-center bgr-home recipe-api-demo">
-                <h1 className="display-5 fw-bold text-white home-title col-8 mx-auto">Food and Recipe Search API Demo</h1>
-                <div className="col-lg-6 mx-auto">
-                    <p className="lead mb-4"></p>
-                </div>
-            </div>
-
+        <div className="mt-5 pt-5">
             <div className="container py-5">
+                <h1 className="text-center mb-5" style={{textShadow: '0 3px 6px'}}>Search Recipes</h1>
                 <div className="row border rounded-3 shadow">
                     <div className="col-md-3 px-4 py-4 bg-light">
                         <div>

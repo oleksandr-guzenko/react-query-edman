@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from "uuid";
 
 import DigestItem from "./DigestItem";
+import DescriptionItem from "./DescriptionItem";
 
 /** 
  * Display a searching result item
@@ -45,6 +46,16 @@ function RecipeItem({item}) {
                                 { digestItems }
                             </div>
                         </div>
+                    </div>
+                </div>
+                <hr />
+                <div className="py-3">
+                    <div className="clearfix">
+                        <div className="float-start"><div className="h3">Ingredients</div></div>
+                        <div className="float-end"><a href={item.url} target="_blank" className="text-decoration-none">Instructions <span className="fa fa-question-circle-o"></span></a></div>
+                    </div>
+                    <div className="row pe-3">
+                        { item.ingredients.map(value => <DescriptionItem item={value} key={uuidv4()} />) }
                     </div>
                 </div>
             </div>

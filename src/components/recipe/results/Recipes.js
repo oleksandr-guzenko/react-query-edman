@@ -18,7 +18,7 @@ function Recipes() {
     return (
         <div className="py-4 px-sm-3">
             <div className="clearfix">
-                <div className="float-start"><h4>Recipes</h4></div>
+                <div className="float-start"><h4>Results</h4></div>
                 {!loading && <div className="float-end">{recipes.length} <b>of</b> {results.count} <b>results</b></div> }
             </div>
             { loading && <div className="text-center" style={{fontSize: '100px', height: '400px', lineHeight: '400px'}}><span className="fa fa-spinner fa-spin"></span></div> }

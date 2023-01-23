@@ -1,0 +1,4097 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check if DescriptionItem component works 1`] = `
+<span
+  className="border border-secondary rounded-pill px-3 py-1 d-inline-block mb-2 me-1"
+>
+   - 
+  undefined-undefinedundefined
+   
+   
+  <span
+    className="fa fa-times"
+    onClick={[Function]}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`check if DigestItem component works 1`] = `
+<div
+  className="col-xxl-6"
+>
+  <div
+    className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+  >
+    <div
+      className="clearfix"
+    >
+      <div
+        className="float-start"
+      />
+      <div
+        className="float-end"
+      >
+        NaN
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`check if Filter component works 1`] = `
+<div
+  className="pt-3"
+>
+  <div
+    className="text-center mt-3"
+  >
+    <button
+      className="btn btn-success px-5"
+      onClick={[Function]}
+    >
+      SEARCH
+    </button>
+  </div>
+</div>
+`;
+
+exports[`check if FilterItem component works 1`] = `
+<span
+  className="border border-secondary rounded-pill px-3 py-1 d-inline-block mb-2 me-1"
+>
+  Fat
+   - 
+  0-100g
+   
+   
+  <span
+    className="fa fa-times"
+    onClick={[Function]}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`check if Header component works 1`] = `
+<header>
+  <nav
+    className="navbar navbar-light fixed-top py-0 bg-white shadow"
+  >
+    <div
+      className="container-fluid d-flex flex-wrap align-items-center justify-content-center py-2 justify-content-md-between border-bottom"
+    >
+      <div
+        className="navbar-header col-md-3 col-6"
+      >
+        <div
+          className="navbar-brand"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="logo"
+              className="pe-2"
+              src="logo.png"
+              style={
+                Object {
+                  "height": "50px",
+                }
+              }
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+`;
+
+exports[`check if NutrientItem component works 1`] = `
+<div
+  className="col-xxl-4 col-lg-6 dropdown pb-3"
+>
+  <button
+    className="btn rounded-pill btn-outline-secondary"
+    data-bs-toggle="dropdown"
+  >
+    <span
+      className="fa fa-plus-circle"
+    />
+    <span
+      className="small"
+    >
+       
+      Fat
+    </span>
+  </button>
+  <div
+    className="dropdown-menu p-2"
+  >
+    <div
+      className="small text-muted"
+      style={
+        Object {
+          "width": "280px",
+        }
+      }
+    >
+      Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+    </div>
+    <div
+      className="fw-bolder text-muted"
+    >
+      min
+    </div>
+    <input
+      className="form-control my-2"
+      min="0"
+      onChange={[Function]}
+      type="number"
+      value={0}
+    />
+    <div
+      className="fw-bolder text-muted"
+    >
+      max
+    </div>
+    <input
+      className="form-control my-2"
+      onChange={[Function]}
+      type="number"
+      value={100}
+    />
+    <div
+      className="clearfix"
+    >
+      <div
+        className="float-start"
+      >
+        g
+      </div>
+      <div
+        className="float-end"
+      >
+        <button
+          className="btn btn-outline-secondary rounded-circle btn-sm"
+          onClick={[Function]}
+        >
+          <span
+            className="fa fa-plus"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`check if Nutrients component works 1`] = `
+<div
+  className="py-4 px-2"
+>
+  <h4
+    className="fw-normal mb-4"
+  >
+    Macronutrients
+  </h4>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Fat
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Saturated
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Trans
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Monounsaturated
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Polyunsaturated
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Carbs
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Fiber
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Sugars
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Protein
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Carbs (net)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Sugars, added
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Sugar alcohols
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Water
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4
+    className="fw-normal mb-4"
+  >
+    Micronutrients
+  </h4>
+  <div
+    className="row"
+  >
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Cholesterol
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Sodium
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Calcium
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            g
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Magnesium
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Potassium
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Iron
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Zinc
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Phosphorus
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin A
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin C
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Thiamin (B1)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Riboflavin (B2)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Niacin (B3)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin (B6)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Folate (Equivalent)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Folate (food)
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Folic acid
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin B12
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin D
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin E
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            mg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xxl-4 col-lg-6 dropdown pb-3"
+    >
+      <button
+        className="btn rounded-pill btn-outline-secondary"
+        data-bs-toggle="dropdown"
+      >
+        <span
+          className="fa fa-plus-circle"
+        />
+        <span
+          className="small"
+        >
+           
+          Vitamin K
+        </span>
+      </button>
+      <div
+        className="dropdown-menu p-2"
+      >
+        <div
+          className="small text-muted"
+          style={
+            Object {
+              "width": "280px",
+            }
+          }
+        >
+          Choose minimum and maximum values for a desired nutrient per serving. For individual foods, the default serving size is 100 g
+        </div>
+        <div
+          className="fw-bolder text-muted"
+        >
+          min
+        </div>
+        <input
+          className="form-control my-2"
+          min="0"
+          onChange={[Function]}
+          type="number"
+          value={0}
+        />
+        <div
+          className="fw-bolder text-muted"
+        >
+          max
+        </div>
+        <input
+          className="form-control my-2"
+          onChange={[Function]}
+          type="number"
+          value={100}
+        />
+        <div
+          className="clearfix"
+        >
+          <div
+            className="float-start"
+          >
+            μg
+          </div>
+          <div
+            className="float-end"
+          >
+            <button
+              className="btn btn-outline-secondary rounded-circle btn-sm"
+              onClick={[Function]}
+            >
+              <span
+                className="fa fa-plus"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`check if Recipe component works 1`] = `
+<div
+  className="mt-5 pt-5"
+>
+  <div
+    className="container py-5"
+  >
+    <h1
+      className="text-center mb-5"
+      style={
+        Object {
+          "textShadow": "0 3px 6px",
+        }
+      }
+    >
+      Search Recipes
+    </h1>
+    <div
+      className="row border rounded-3 shadow"
+    >
+      <div
+        className="col-md-3 px-4 py-4 bg-light"
+      >
+        <div>
+          <div
+            className="small text-muted"
+          >
+            Choose one or more methods
+          </div>
+          <div>
+            <div
+              className="px-0 py-3 mt-2 h5 fw-normal tab text-success"
+              onClick={[Function]}
+            >
+              Searching by keyword
+            </div>
+          </div>
+          <div>
+            <div
+              className="px-0 py-3 h5 fw-normal tab"
+              onClick={[Function]}
+            >
+              Nutrients
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md-6 border-md-start border-md-end middle-form py-3"
+      >
+        <div
+          className="py-4 px-2"
+        >
+          <div
+            className="text-muted mb-5"
+          >
+            Enter a what you have eaten, like "coffee and croissant" or "chicken enchilada" to see how it works. We have accurate data tens of thousands of foods, including international dishes.
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="search"
+            >
+              Keywords
+            </label>
+            <div
+              className="input-group mb-3 mt-2"
+            >
+              <input
+                className="form-control"
+                onChange={[Function]}
+                placeholder="Type one or more keywords"
+                type="text"
+              />
+              <button
+                className="btn btn-success"
+                onClick={[Function]}
+              >
+                <span
+                  className="fa fa-search"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-md-3 bg-light py-3"
+      >
+        <div
+          className="pt-3"
+        >
+          <div
+            className="text-center mt-3"
+          >
+            <button
+              className="btn btn-success px-5"
+              onClick={[Function]}
+            >
+              SEARCH
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`check if RecipeItem component works 1`] = `
+<div
+  className="rounded-2 border shadow my-4"
+>
+  <div
+    className="container pt-4"
+  >
+    <div
+      className="row p-2"
+    >
+      <div
+        className="col-lg-4"
+      >
+        <img
+          alt=""
+          className="w-100 img-thumbnail mb-2"
+          src="https://edamam-product-images.s3.amazonaws.com/web-img/6b0/6b0e1ae1cad3ec26ac8814052ea8fe0c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECMaCXVzLWVhc3QtMSJHMEUCIQDflEfyOkDVvR8sI7duYKQ9TwmErvEN%2FGo2rVRskwyQAgIgCRsi0c8J0nLONqDWRL%2B8uPtU2CtElhKuLqt1FeIPy54q1QQIjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwxODcwMTcxNTA5ODYiDJ6l6Bjw2ak%2FkHzTFSqpBI9AmR9G38EdZ3PhdqbGS1TakiEjGuj1gY8xuL7jNoF%2FxVpMDlNUgHlb%2FoCBvmImcWbxLs%2FFmIulTv7mo%2BZ7NtCSRysjEZjAYFZ4fPsnnxHmdT7C%2BFG0j2LLU%2BqiVk0U7bMSfx%2BxLloLUcbG8I%2F1vpxsLFSl2QmW1XQ%2B79XR6AGqFInoZ1r3r5Nt2jjr4uak4YZHBiModixMoii9dD4cwxxanMaR9EWoGo%2Fu6%2BPuhDTf5mDSJ4LMxm5iIDjEyJzAV2E40BcFS%2FNIoZcMC7Uhq2gm98kkYdiHC%2FkSBFcyTTjZQ8ePRMdzo4OyIVFppCWFhm25lI1ZYo6FvdkSeNMYwFpAcauA7riEWW8T0L3sS38%2FtwLEXqsMfdekHXBQN83AYDVnHxXQFBxZClTZq08FZEgRt5Exd5p3%2FYGdxJhTPhpPCWxlJ07fUd4BMZW3hNVNH54CansuXFTuEArlFftwQDio2PBc92NeukkO7CRh6da2aAJhMF9tvHRPMc%2FwEtDC2K8Hh8cOxwoL3l0%2BGME1Qd5F2oYOLFuPkygIvfW50dXoWIVjLBYPcUgxIVQNCQaC59H7YT1%2Bq3877YKg2A9pxzhqEZOfp%2FJmHRUEkhEtSlYfSGArcNDZHHnpQ71nH76Qxj%2BPY0hr71J9xMxMcSbz2UZljoiSHx4MCDUkxGzOKD7azheAlz8eiSQmhsakZz9rlkINRKo%2B0AB9ROC7LLpM7k80RZrhFHxwuXAwwOKpngY6qQFFlkhuM0lWtzELASP8lGRcjUKTUFLw%2BQGkAlOrc6UGYFKN36e2eh%2BsX6QBvDVYsdpw3Ii%2BHjdYqho1OH5lhY5Naqf6sIR%2BkURlvIDF7ee2QSR3GerDH6Pdl3QUMLQbu%2BTLZwVyrfpjOtKN1ucBhlRJsuYxqEgJScxZDCPA%2BAeLjNyLYGVfRX1tmyDaI5hxeVgpWW%2Fcvvae5PTOreQQygkCl%2BL3dxwZu%2Bri&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230120T121719Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFKI4YC36V%2F20230120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fa2e24faf237dfc4f4d1ba57c157153a9248b6032c12f75e3ebef90d2522a663"
+        />
+      </div>
+      <div
+        className="col-lg-8"
+      >
+        <div
+          className="h5 mb-2"
+        >
+          Coffee Cabinets (Rhode Island-Style Coffee Milkshakes) Recipe
+        </div>
+        <div
+          className=""
+        >
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Low Sodium
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Vegetarian
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Pescatarian
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Gluten Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Wheat Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Egg Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Peanut Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Tree Nut Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Soy Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Fish Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Shellfish Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Pork Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Red Meat Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Crustacean Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Celery Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Mustard Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Sesame Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Lupine Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Mollusk Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Alcohol Free
+          </div>
+          <div
+            className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1"
+          >
+            Kosher
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="py-3"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-lg-4 text-center mb-2"
+        >
+          <div
+            className="text-muted fw-bold"
+          >
+            2
+             SERVINGS
+          </div>
+          <div>
+            <span
+              className="h1 fw-light"
+            >
+              733
+            </span>
+             
+            <span
+              className="fw-bold text-muted"
+            >
+              kcal
+            </span>
+          </div>
+        </div>
+        <div
+          className="col-lg-8"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Fat
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    31
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Saturated
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    19
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Trans
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Monounsaturated
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    8
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Polyunsaturated
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Carbs
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    292
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Carbs (net)
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    290
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Fiber
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Sugars
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    283
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Sugars, added
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    279
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Protein
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    11
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Cholesterol
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    122
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Sodium
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    250
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Calcium
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    455
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Magnesium
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    60
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Potassium
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    841
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Iron
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Zinc
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    2
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Phosphorus
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    338
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin A
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    339
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin C
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Thiamin (B1)
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Riboflavin (B2)
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Niacin (B3)
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin B6
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Folate equivalent (total)
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    22
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Folate (food)
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    22
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Folic acid
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin B12
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin D
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin E
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    mg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Vitamin K
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    1
+                     
+                    μg
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Sugar alcohols
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    0
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xxl-6"
+            >
+              <div
+                className="border py-1 px-2 mb-1 rounded-3 border-secondary"
+              >
+                <div
+                  className="clearfix"
+                >
+                  <div
+                    className="float-start"
+                  >
+                    Water
+                  </div>
+                  <div
+                    className="float-end"
+                  >
+                    522
+                     
+                    g
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="py-3"
+    >
+      <div
+        className="h3"
+      >
+        Recipe
+      </div>
+      <div
+        className="row pe-3"
+      >
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/ee9/ee9566349cb84dfd9ddac1fdf8cbc907.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          1 cup strong brewed coffee
+        </div>
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          1 cup sugar
+        </div>
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/90f/90f910b0bf82750d4f6528263e014cca.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          1/4 teaspoon vanilla extract
+        </div>
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/1be/1be43587dc55730fc761aedf4f3df090.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          1 pint coffee ice cream
+        </div>
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/7c9/7c9962acf83654a8d98ea6a2ade93735.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          1/4 cup whole milk
+        </div>
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/ee9/ee9566349cb84dfd9ddac1fdf8cbc907.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          1/4 cup chilled coffee
+        </div>
+        <div
+          className="col-xl-2 col-md-3 col-2 my-2"
+        >
+          <img
+            alt="recipe_img"
+            className="w-100 img-thumbnail"
+            src="https://www.edamam.com/food-img/ced/ced25c45453a118e531c8aaf33e2ee38.jpg"
+          />
+        </div>
+        <div
+          className="col-xl-4 col-md-9 col-10 my-2 fw-bolder"
+        >
+          2 tablespoons coffee syrup
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`check if Recipes component works 1`] = `
+<div
+  className="py-4 px-sm-3"
+>
+  <div
+    className="clearfix"
+  >
+    <div
+      className="float-start"
+    >
+      <h4>
+        Results
+      </h4>
+    </div>
+    <div
+      className="float-end"
+    >
+      0
+       
+      <b>
+        of
+      </b>
+       
+       
+      <b>
+        results
+      </b>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`check if Search component works 1`] = `
+<div
+  className="py-4 px-2"
+>
+  <div
+    className="text-muted mb-5"
+  >
+    Enter a what you have eaten, like "coffee and croissant" or "chicken enchilada" to see how it works. We have accurate data tens of thousands of foods, including international dishes.
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="search"
+    >
+      Keywords
+    </label>
+    <div
+      className="input-group mb-3 mt-2"
+    >
+      <input
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Type one or more keywords"
+        type="text"
+      />
+      <button
+        className="btn btn-success"
+        onClick={[Function]}
+      >
+        <span
+          className="fa fa-search"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
