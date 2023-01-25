@@ -24,13 +24,18 @@ function RecipeItem({item}) {
                     </div>
                     <div className="col-lg-8">
                         <div className="h5 mb-2">{item.label}</div>
-                        <div className="">
+                        <div>
                             {item.dietLabels.map(value => (
                                 <div className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1" key={uuidv4()}>{value.replaceAll('-', ' ')}</div>
                             ))}
                             {item.healthLabels.map(value => (
                                 <div className="d-inline-block rounded-pill border py-1 px-2 border-secondary me-1 mb-1" key={uuidv4()}>{value.replaceAll('-', ' ')}</div>
                             ))}
+                        </div>
+                        <div className="mt-3">
+                            <button className="btn btn-secondary rounded-pill">
+                                <span className="fa fa-plus-circle"></span> Add Tag
+                            </button>
                         </div>
                     </div>
                 </div>

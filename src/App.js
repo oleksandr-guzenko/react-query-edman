@@ -1,20 +1,24 @@
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router, Route, Routes, redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import Header from "./components/layouts/Header";
 import Recipe from "./components/recipe/Recipe";
 import Tags from "./components/tags/Tags";
+import { getTags } from './actions/tagActions'
 
 import store from "./store";
 
 function App() {
+  // get all tags from the server
+  getTags();
+  
   return (
     <Provider store={store}>
       <Router>
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Recipe />}></Route>
+            <Route path="/" element={<Navigate to="/recipes" />} />
             <Route path="/recipes" element={<Recipe />} />
             <Route path="/tags" element={<Tags />} />
           </Routes>
