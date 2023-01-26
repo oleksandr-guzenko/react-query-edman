@@ -12,3 +12,8 @@ export const ADD_TAG = 'ADD_TAG'
 export const UPDATE_TAG = 'UPDATE_TAG'
 export const TAGS_LOADING = 'TAGS_LOADING'
 export const TAG_ERRORS = 'TAG_ERRORS'
+
+// Recipe Tag Actions
+export const GET_RECIPE_TAGS = 'GET_RECIPE_TAGS'
+export const ADD_RECIPE_TAG = 'ADD_RECIPE_TAG'
+export const RECIPE_TAGS_LOADING = 'RECIPE_TAGS_LOADING'

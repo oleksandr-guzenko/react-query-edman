@@ -36,6 +36,10 @@
     background: #00000057; 
   }
 
-/* .custom-scroll:hover::-webkit-scrollbar {
-    background: #00000057;
-} */
+.rmsc .dropdown-container{
+  border-radius: 0 9999px 9999px 0 !important;
+}
+
+.rmsc {
+  border-radius: 0 9999px 9999px 0;
+}

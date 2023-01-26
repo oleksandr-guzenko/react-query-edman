@@ -64,6 +64,4 @@ export const updateTag = (tagId, loadingElement, toastr) => {
             toastr['error']('Something went wrong. Try again.');
             loadingElement.style.display = 'none';
         });
-
-    
 }
