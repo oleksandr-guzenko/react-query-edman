@@ -1,7 +1,8 @@
 import { 
   GET_RECIPE_TAGS,
   ADD_RECIPE_TAG,
-  RECIPE_TAGS_LOADING
+  RECIPE_TAGS_LOADING,
+  DELETE_TAG
  } from "../actions/types";
 
 const initialState = {
@@ -25,20 +26,21 @@ export default (state = initialState, { type, payload }) => {
       }
     
     case ADD_RECIPE_TAG:
-      {
-        if(payload.length > 0) {
-          const recipe_id = payload[0].recipe_ID;
-
-          const newRecipeTags = state.recipeTags.filter(value => value.recipe !== recipe_id);
-
-          return { 
-            ...state, 
-            loading: false,
-            recipeTags: [ ...newRecipeTags, ...payload ]
-          }
-        } else return { ...state }
+      return {
+        ...state,
+        recipeTags: [ ...state.recipeTags, payload ]
       }
-      
+    
+    case DELETE_TAG:
+      const index = state.recipeTags.findIndex(value => value.id === payload);
+
+      if(index !== -1) state.recipeTags.splice(index, 1);
+
+      return {
+        ...state,
+        recipeTags: [ ...state.recipeTags ]
+      }
+
     default:
       return state
   }

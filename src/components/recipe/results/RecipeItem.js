@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import { MultiSelect } from "react-multi-select-component";
 
 import DigestItem from "./DigestItem";
 import DescriptionItem from "./DescriptionItem";
-import { addRecipeTag } from "../../../actions/recipeTagActions";
+import { 
+    addRecipeTag, 
+    deleteRecipeTag 
+} from "../../../actions/recipeTagActions";
 
 /** 
  * Display a searching result item
@@ -13,7 +16,6 @@ import { addRecipeTag } from "../../../actions/recipeTagActions";
  * @param {string} item - a result item information
  */
 function RecipeItem({item}) {
-    const dispatch = useDispatch();
     const recipe_ID = item.uri.split('#')[1];
     const tags = useSelector(state => state.tags.tags);
     const recipeTags = useSelector(state => state.recipeTags.recipeTags);
@@ -31,22 +33,26 @@ function RecipeItem({item}) {
                 .map(selectableTag => (
                     <button 
                         className="btn-outline-secondary btn rounded-pill me-1 mb-1" 
-                        key={`${recipe_ID}-${selectableTag.id}`}
+                        key={uuidv4()}
                         onClick={e => addRecipeTag(selectableTag.id, recipe_ID)}
                     >
                         {selectableTag.label} <span className="fa fa-plus" id={`loading-${recipe_ID}-${selectableTag.id}`}></span>
                     </button>
                 ));
-
-        return selectableTags;
+        
+        return selectableTags.length > 0 ? selectableTags : <div className="text-center text-muted">No Tags</div> ;
     }
 
     const showSelectedTags = () => {
         const selectedTags = recipeTags.filter(value => value.recipe_ID === recipe_ID);
         
         return selectedTags.map(recipeTag => (
-            <button className="btn btn-outline-secondary rounded-pill px-2 py-1 me-1 mb-1">
-                {recipeTag.tag_ID.label} <span className="fa fa-remove"></span>
+            <button 
+                className="btn btn-outline-secondary rounded-pill px-2 py-1 me-1 mb-1"
+                key={uuidv4()}
+                onClick={e => deleteRecipeTag(recipeTag.id, recipeTag.tag_ID.id)}
+            >
+                {recipeTag.tag_ID.label} <span className="fa fa-remove" id={`loading-${recipeTag.id}`}></span>
             </button>
         ));
     }
