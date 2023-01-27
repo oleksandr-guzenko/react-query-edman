@@ -29,7 +29,7 @@ function RecipeItem({item}) {
 
         const selectableTags = 
             tags
-                .filter(tag => selectedTags.findIndex(recipeTag => recipeTag.tag_ID.id === tag.id) === -1)
+                .filter(tag => selectedTags.findIndex(recipeTag => recipeTag.tag_ID.id === tag.id) === -1 && tag.active)
                 .map(selectableTag => (
                     <button 
                         className="btn-outline-secondary btn rounded-pill me-1 mb-1" 
@@ -46,15 +46,25 @@ function RecipeItem({item}) {
     const showSelectedTags = () => {
         const selectedTags = recipeTags.filter(value => value.recipe_ID === recipe_ID);
         
-        return selectedTags.map(recipeTag => (
-            <button 
-                className="btn btn-outline-secondary rounded-pill px-2 py-1 me-1 mb-1"
-                key={uuidv4()}
-                onClick={e => deleteRecipeTag(recipeTag.id, recipeTag.tag_ID.id)}
-            >
-                {recipeTag.tag_ID.label} <span className="fa fa-remove" id={`loading-${recipeTag.id}`}></span>
-            </button>
-        ));
+        return selectedTags.map(recipeTag => {
+            const tag_id = recipeTag.tag_ID.id;
+
+            const index = tags.findIndex(tag => tag.id === tag_id);
+
+            if(index === -1) return;
+            else {
+                if(tags[index].active) return (
+                    <button 
+                        className="btn btn-outline-secondary rounded-pill px-2 py-1 me-1 mb-1"
+                        key={uuidv4()}
+                        onClick={e => deleteRecipeTag(recipeTag.id, recipeTag.tag_ID.id)}
+                    >
+                        {recipeTag.tag_ID.label} <span className="fa fa-remove" id={`loading-${recipeTag.id}`}></span>
+                    </button>
+                    )
+                else return;
+            }
+        });
     }
 
     return (
