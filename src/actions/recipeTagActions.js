@@ -46,7 +46,6 @@ export const addRecipeTag = (tag_ID, recipe_ID) => {
 }
 
 export const deleteRecipeTag = (recipe_id, tag_id) => {
-  console.log(`loading-${recipe_id}`)
   const loadingElement = document.getElementById(`loading-${recipe_id}`);
 
   loadingElement.className = 'fa fa-spinner fa-spin';
