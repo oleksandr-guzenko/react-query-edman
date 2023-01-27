@@ -17,13 +17,18 @@ import {
  */
 function RecipeItem({item}) {
     const recipe_ID = item.uri.split('#')[1];
-    const tags = useSelector(state => state.tags.tags);
-    const recipeTags = useSelector(state => state.recipeTags.recipeTags);
+    const tags = useSelector(state => state.tags.tags); // all custom tags
+    const recipeTags = useSelector(state => state.recipeTags.recipeTags); // all custom tags added to recipes
     const digests = item.digest;
     const digestItems = digests.map((value, index) => 
         <DigestItem item={value} key={uuidv4()} />
     );
 
+    /**
+     * shows selecatable custom tags
+     * @funcition
+     * @returns {Array} - DOM array to show selectable tags
+     */
     const showSelectableTags = () => {
         const selectedTags = recipeTags.filter(recipeTag => recipeTag.recipe_ID === recipe_ID);
 
@@ -43,6 +48,11 @@ function RecipeItem({item}) {
         return selectableTags.length > 0 ? selectableTags : <div className="text-center text-muted">No Tags</div> ;
     }
 
+    /**
+     * show added tags to a recipe
+     * @function
+     * @returns {Array} - DOM array to show added tags to a recipe
+     */
     const showSelectedTags = () => {
         const selectedTags = recipeTags.filter(value => value.recipe_ID === recipe_ID);
         
