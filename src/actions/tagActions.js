@@ -9,13 +9,15 @@ import {
 } from "./types";
 import store from "../store";
 
+const server_url = 'https://dragonwarrior987600.pythonanywhere.com';
+
 export const getTags = (toastr) => {
     store.dispatch({
         type: TAGS_LOADING,
         payload: null
     });
     axios
-        .get('/api/tags/')
+        .get(`${server_url}/api/tags/`)
         .then(res => {
             store.dispatch({
                 type: GET_TAGS,
@@ -29,7 +31,7 @@ export const addTag = (tag, loadingElement, closeModal, toastr) => {
     loadingElement.style.display = 'inline-block';
 
     axios
-        .post('/api/tags/', tag)
+        .post(`${server_url}/api/tags/`, tag)
         .then(res => {
             store.dispatch({
                 type: ADD_TAG,
@@ -52,7 +54,7 @@ export const updateTag = (tagId, loadingElement, toastr) => {
     loadingElement.style.display = 'inline-block';
 
     axios
-        .put(`/api/tags/${tagId}/`)
+        .put(`${server_url}/api/tags/${tagId}/`)
         .then(res => {
             store.dispatch({
                 type: UPDATE_TAG,

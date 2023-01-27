@@ -8,9 +8,11 @@ import {
 } from "./types";
 import store from "../store.js";
 
+const server_url = 'https://dragonwarrior987600.pythonanywhere.com';
+
 export const getRecipeTags = () => {
   axios
-    .get('/api/recipe-tags/')
+    .get(`${server_url}/api/recipe-tags/`)
     .then(res => {
       store.dispatch({
         type: GET_RECIPE_TAGS,
@@ -27,7 +29,7 @@ export const addRecipeTag = (tag_ID, recipe_ID) => {
   loadingElement.className = 'fa fa-spinner fa-spin';
 
   axios
-    .post('/api/recipe-tags/', {
+    .post(`${server_url}/api/recipe-tags/`, {
       tag_ID,
       recipe_ID
     })
@@ -51,7 +53,7 @@ export const deleteRecipeTag = (recipe_id, tag_id) => {
   loadingElement.className = 'fa fa-spinner fa-spin';
 
   axios
-    .delete(`/api/recipe-tags/${recipe_id}/`)
+    .delete(`${server_url}/api/recipe-tags/${recipe_id}/`)
     .then(res => {
       store.dispatch({
         type: DELETE_TAG,
