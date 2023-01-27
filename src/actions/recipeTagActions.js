@@ -10,6 +10,10 @@ import store from "../store.js";
 
 const server_url = 'https://dragonwarrior987600.pythonanywhere.com';
 
+/**
+ * get all recipe tags from the backend
+ * @function
+ */
 export const getRecipeTags = () => {
   axios
     .get(`${server_url}/api/recipe-tags/`)
@@ -22,7 +26,14 @@ export const getRecipeTags = () => {
     .catch(err => console.log(err));
 }
 
+/**
+ * add a custom tag to a recipe
+ * @function
+ * @param {string} tag_ID - id of a custom tag to be added to a recipe, id means the id stored in the database table
+ * @param {string} recipe_ID - uri of a recipe from the Edman API
+ */
 export const addRecipeTag = (tag_ID, recipe_ID) => {
+  // element to show loading while waiting for responses from server
   const loadingElement = document.getElementById(`loading-${recipe_ID}-${tag_ID}`);
 
 
@@ -47,7 +58,14 @@ export const addRecipeTag = (tag_ID, recipe_ID) => {
     });
 }
 
+/**
+ * delete a custom tag added from a recipe
+ * @function
+ * @param {string} recipe_id - uri of the recipe which you want to delete a custom tag added from
+ * @param {string} tag_id - id of the custom tag added to a recipe, id means the id stored in the database table
+ */
 export const deleteRecipeTag = (recipe_id, tag_id) => {
+  // element to show loading while waiting for responses from server
   const loadingElement = document.getElementById(`loading-${recipe_id}`);
 
   loadingElement.className = 'fa fa-spinner fa-spin';

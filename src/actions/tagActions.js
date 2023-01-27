@@ -11,6 +11,11 @@ import store from "../store";
 
 const server_url = 'https://dragonwarrior987600.pythonanywhere.com';
 
+/**
+ * get all custom tags from the backend
+ * @function
+ * @param {Object} toastr - javascript object to show notification
+ */
 export const getTags = (toastr) => {
     store.dispatch({
         type: TAGS_LOADING,
@@ -27,6 +32,14 @@ export const getTags = (toastr) => {
         .catch(err => console.log(err));
 }
 
+/**
+ * create a new custom tag
+ * @function
+ * @param {Object} tag - tag info to create newly
+ * @param {DOM} loadingElement - DOM element to show loading while waiting for responses from server
+ * @param {Function} closeModal - function to close modal after creation a new tag successfully
+ * @param {Object} toastr - javascript object to show notification
+ */
 export const addTag = (tag, loadingElement, closeModal, toastr) => {
     loadingElement.style.display = 'inline-block';
 
@@ -50,6 +63,13 @@ export const addTag = (tag, loadingElement, closeModal, toastr) => {
         });
 }
 
+/**
+ * enable or disable the custom tag added
+ * @function
+ * @param {string} tagId - id of the custome tag to be enabled or disabled, id means the id stored in the database table
+ * @param {DOM} loadingElement - DOM element to show loading while waiting for responses from server
+ * @param {Object} toastr - javascript object to show notification
+ */
 export const updateTag = (tagId, loadingElement, toastr) => {
     loadingElement.style.display = 'inline-block';
 

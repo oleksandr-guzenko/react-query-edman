@@ -7,7 +7,7 @@ import { updateTag } from "../../actions/tagActions";
  * display a tag item
  * @component
  * @param {Object} tag - tag info
- * @param {Number} index - tag order
+ * @param {number} index - tag order
  */
 function TagItem({ tag, index }) {
     const toastr = window.toastr;

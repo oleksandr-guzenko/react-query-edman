@@ -1,5 +1,10 @@
 import React from 'react'
 
+/**
+ * shows ingredients for a recipe
+ * @component
+ * @param {Object} item - an ingredient info item
+ */
 function DescriptionItem({item}) {
   return (
         <>

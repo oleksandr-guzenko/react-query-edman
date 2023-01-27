@@ -12,7 +12,6 @@ import {
  * @component 
  */
 function Tags() {
-  // getTags();
   const allTags = useSelector(state => state.tags.tags);
   const { loading, errors } = useSelector(state => state.tags);
   const [label, setLabel] = useState('');
@@ -30,14 +29,22 @@ function Tags() {
   
   const tagItems = tags.map((value, index) => <TagItem tag={value} index={index} key={value.id} />)
 
+  /**
+   * close modal
+   * @function
+   */
   const closeModal = () => {
     document.getElementById('tag-modal').style.display = 'none';
     document.getElementsByClassName('modal-backdrop')[0].remove();
   }
 
+  /**
+   * add a custom tag
+   * @function
+   */
   const onAddTag = () => {
     const newTag = {
-      label,
+      label: label.trim(),
       description
     }
     const loadingElement = document.getElementById('save-loading');
@@ -45,6 +52,11 @@ function Tags() {
     addTag(newTag, loadingElement, closeModal, toastr);
   }
 
+  /**
+   * sort fields
+   * @function
+   * @param {string} fieldname - name of the field to be sorted
+   */
   const onSort = (fieldname) => {
     setField(fieldname);
 
@@ -57,12 +69,23 @@ function Tags() {
     setTags([ ...newTags ]);
   }
 
+  /**
+   * search tag with keywords
+   * @function
+   * @param {string} qstring - keyword to search tags
+   */
   const onSearch = (qstring) => {
     const newTags = allTags.filter(value => value.label.toLowerCase().search(qstring.toLowerCase()) !== -1);
 
     setTags(newTags);
   }
 
+  /**
+   * show carets when you sort
+   * @function
+   * @param {string} fieldname - name of field to display carets
+   * @returns {DOM} icon DOM to show sorting order
+   */
   const showSortIcon = (fieldname) => {
     if(fieldname === field) {
       if(orders[field]) return <span className="fa fa-caret-down"></span>;
