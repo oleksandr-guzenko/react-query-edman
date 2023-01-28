@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project can get the recipes from the Edman API and tag manually. You can see the [Demo](https://silver-stroopwafel-67183c.netlify.app). You can read [the Edman API doc](https://developer.edamam.com/edamam-docs-recipe-api).
 
-## Available Scripts
+You can set the API info in the file named '.env' in the root folder.
 
-In the project directory, you can run:
+```
+REACT_APP_API_ID=YOUR_EDMAN_API_ID
+REACT_APP_API_KEY=YOUR_EDMAN_API_ID
+```
 
-### `npm start`
+# Building and Deploying the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Building React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can learn [buiding react app](https://www.freecodecamp.org/news/how-to-build-a-react-project-with-create-react-app-in-10-steps/#step-10-how-to-build-the-app-and-publish-it)
+Create a new file named '\_redirects' in the folder 'public'. Then wirte the following line.
 
-### `npm test`
+```
+/* /index.html 200
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This line will help you with redirecting the links for your react app. And excute the following command
 
-### `npm run build`
+```
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After done this, you can see the new folder named 'build'.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Deploying the built react app on Netlify App
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can deploy the built react app on Netlify App very easily. You can deploy that using Git or manually. You can read [more info](https://docs.netlify.com/site-deploys/create-deploys/#app). To deploy using Git, you can visit [here](https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/)
 
-### `npm run eject`
+I describe here how to deploy manually. You can do the following instructions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Register and log in Netlify
+- You can find 'Sites' title and there click 'Add new site' button. Then click 'Deploy manually'.
+- Drag and drop the folder 'build'
+- Then you can see a new link named randomly. (e.g. https://silver-stroopwafel-67183c.netlify.app) You can visit the link and see how your product works
